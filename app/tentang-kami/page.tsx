@@ -44,6 +44,9 @@ const page = () => {
         </p>
       </div>
       <h2 className="text-2xl font-bold mb-2">Alamat Jaya Bakery</h2>
+      <div className="w-full">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.362725841614!2d105.30112497591266!3d-5.361506753661621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db38a3282303%3A0x8491b62d67bc221!2sJaya%20Bakery!5e0!3m2!1sen!2sid!4v1736530876274!5m2!1sen!2sid" className="w-full" width="800" height="600" loading="lazy"></iframe>
+      </div>
     </div>
   );
 };
