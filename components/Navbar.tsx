@@ -24,7 +24,9 @@ const Navbar: React.FC = () => {
           {/* Menu Items */}
           <div className="hidden md:flex space-x-6">
             <a href="#" className="text-[#FFD700] hover:text-white">Beranda</a>
-            <a href="#" className="text-[#FFD700] hover:text-white">Produk</a>
+            <Link className="text-[#FFD700] hover:text-white" href="/produk">
+              Produk
+            </Link>
             <Link className="text-[#FFD700] hover:text-white" href="/tentang-kami">
               Tentang Kami
             </Link>
