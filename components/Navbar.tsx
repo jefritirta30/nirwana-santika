@@ -13,17 +13,21 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={40}
-              height={40}
-            />
+            <Link className="text-[#FFD700] hover:text-white" href="/">
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={40}
+                height={40}
+              />
+            </Link>
           </div>
           
           {/* Menu Items */}
           <div className="hidden md:flex space-x-6">
-            <a href="#" className="text-[#FFD700] hover:text-white">Beranda</a>
+            <Link className="text-[#FFD700] hover:text-white" href="/">
+              Beranda
+            </Link>
             <Link className="text-[#FFD700] hover:text-white" href="/produk">
               Produk
             </Link>
