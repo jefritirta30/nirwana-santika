@@ -1,13 +1,16 @@
+import Image from "next/image";
 import React from "react";
 const page = () => {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-4xl font-bold mb-4">Tentang Jaya Bakery</h1>
       <div className="flex flex-col md:flex-row mb-8">
-        <img
+        <Image
           alt="Interior of Jaya Bakery with shelves of baked goods and customers"
           className="w-full md:w-1/2 h-auto mb-4 md:mb-0 md:mr-4"
-          src="https://placehold.co/600x400"
+          width={10000}
+          height={10000}
+          src="/Capture.PNG"
         />
         <div className="md:w-1/2">
           <h2 className="text-2xl font-bold mb-2">Apa itu Jaya Bakery?</h2>
