@@ -1,10 +1,13 @@
 import HeroSection from "@/components/Hero";
-import Image from "next/image";
+import MenuSection from "@/components/Menu";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
-    <HeroSection/>
+      <HeroSection />
+      <MenuSection />
     </>
   );
-}
+};
+
+export default Home;
