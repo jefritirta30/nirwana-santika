@@ -6,7 +6,7 @@ const MenuSection: React.FC = () => {
 
   return (
     <section className="text-center mt-6 px-6 max-w-screen-lg mx-auto">
-      <h2 className="text-4xl font-bold text-black mb-6">
+      <h2 className="text-4xl font-bold text-black mb-6 font-poppins">
         Nikmati kue terlaris di bulan ini dari Jaya Bakery
       </h2>
     </section>
