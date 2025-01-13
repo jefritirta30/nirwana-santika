@@ -1,9 +1,8 @@
-
 import Card from "@/components/Card";
 import Hero from "@/components/Hero";
 import dummyData from "@/components/data/dumydata.json"
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
     <Hero />
@@ -21,7 +20,10 @@ export default function Home() {
             lihat semua kue
           </a>
         </div>
-      </main>
+      </main>     
+      <HeroSection /> 
     </>
   );
-}
+};
+
+export default Home;
