@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -17,12 +18,19 @@ export default function HeroSection() {
             yang tak terlupakan.
           </p>
           <div className="flex gap-4">
+            <Link href="/produk">
             <button className="bg-[#FFC107] hover:bg-[#d69c06] text-black font-semibold py-2 px-6 rounded">
-              All Products
+            All Products
+            Produk
             </button>
+            </Link>
+            
+            <Link href="/tentang-kami">
             <button className="bg-white hover:bg-gray-200 text-[#3F0405] font-semibold py-2 px-6 rounded">
               Tentang Kami
             </button>
+            </Link>
+            
           </div>
         </div>
 
