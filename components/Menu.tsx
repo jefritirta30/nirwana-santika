@@ -1,7 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 const MenuSection: React.FC = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
 // Data untuk menu roti (50 item dengan nama yang diperbaiki)
 const cakes = [
   { name: "Tart Coklat", price: "Rp90.000", sold: 4900 },
@@ -56,13 +58,15 @@ const cakes = [
   { name: "Roti Krim Kacang", price: "Rp40.000", sold: 50 },
 ];
 
+  const displayedCakes = isExpanded ? cakes : cakes.slice(0, 4);
+
   return (
     <section className="text-center mt-6 px-6 max-w-screen-lg mx-auto">
       <h2 className="text-4xl font-bold text-black mb-6">
         Nikmati kue terlaris di bulan ini dari Jaya Bakery
       </h2>
       <div className="grid gap-4 place-items-center grid-cols-2">
-        {cakes.map((cake, index) => (
+        {displayedCakes.map((cake, index) => (
           <div
             key={index}
             className="bg-white border rounded-lg shadow-lg p-3 text-center"
@@ -73,6 +77,12 @@ const cakes = [
           </div>
         ))}
       </div>
+      <button
+        className="mt-6 bg-[#FFC107] hover:bg-[#d69c06] text-black font-semibold py-2 px-6 rounded-lg shadow-md transition"
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
+        {isExpanded ? "Tutup" : "Lihat semua kue"}
+      </button>
     </section>
   );
 };
