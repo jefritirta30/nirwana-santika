@@ -6,20 +6,20 @@ const MenuSection: React.FC = () => {
 
   // Data untuk menu roti (50 item dengan nama yang diperbaiki)
   const cakes = [
-    { name: "Tart Coklat", price: "Rp90.000", sold: 4900 },
-    { name: "Slice Cake", price: "Rp25.000", sold: 4800 },
-    { name: "Roti Gandum", price: "Rp30.000", sold: 4700 },
-    { name: "Roti Campur", price: "Rp75.000", sold: 4600 },
-    { name: "Tart Stroberi", price: "Rp90.000", sold: 4500 },
-    { name: "Croissant Keju", price: "Rp50.000", sold: 4400 },
-    { name: "Roti Mousse", price: "Rp50.000", sold: 4300 },
-    { name: "Roti Pelangi Red Velvet", price: "Rp65.000", sold: 4200 },
-    { name: "Mini Tart Keju", price: "Rp90.000", sold: 4100 },
-    { name: "American Chocolate Cake", price: "Rp120.000", sold: 4000 },
-    { name: "Tart Oreo", price: "Rp100.000", sold: 3900 },
-    { name: "Tart Almond", price: "Rp125.000", sold: 3800 },
-    { name: "Tart Vanilla", price: "Rp85.000", sold: 3700 },
-    { name: "Roti Almond", price: "Rp75.000", sold: 3600 },
+    { "name": "Tart Coklat", "price": "Rp90.000", "sold": 4900, "image": "/images/TartMungil.png" },
+    { "name": "Slice Cake", "price": "Rp25.000", "sold": 4800 , "image": "/images/Product24.png"},
+    { "name": "Roti Gandum", "price": "Rp30.000", "sold": 4700, "image": "/images/Product1.png"},
+    { "name": "Roti Campur", "price": "Rp75.000", "sold": 4600,"image": "/images/Product2.png"},
+    { "name": "Tart Stroberi", "price": "Rp90.000", "sold": 4500,"image": "/images/Product25.png" },
+    { "name": "Croissant Keju", "price": "Rp50.000", "sold": 4400,"image": "/images/Product29.png"},
+    { "name": "Roti Mousse", "price": "Rp50.000", "sold": 4300,"image": "/images/Product8.png" },
+    { "name": "Roti Pelangi Red Velvet", "price": "Rp65.000", "sold": 4200, "image": "/images/Product12.png" },
+    { "name": "Mini Tart Keju", "price": "Rp90.000", "sold": 4100 ,"image": "/images/Product48.png"},
+    { "name": "American Chocolate Cake", "price": "Rp120.000", "sold": 4000,"image": "/images/Product30.png" },
+    { "name": "Tart Oreo", "price": "Rp100.000", "sold": 3900,"image": "/images/Product35.png" },
+    { "name": "Tart Almond", "price": "Rp125.000", "sold": 3800,"image": "/images/Product50.png" },
+    { "name": "Tart Vanilla", "price": "Rp85.000", "sold": 3700 ,"image": "/images/Product28.png"},
+    { "name": "Roti Almond", "price": "Rp75.000", "sold": 3600 ,"image": "/images/Product31.png" },
     { name: "Tart Cherry", price: "Rp120.000", sold: 3500 },
     { name: "Roti Mocca", price: "Rp50.000", sold: 3400 },
     { name: "Cake Dessert", price: "Rp85.000", sold: 3300 },
@@ -83,7 +83,7 @@ const MenuSection: React.FC = () => {
           >
             <div className="bg-gray-200 w-full h-32 rounded-lg mb-3 overflow-hidden">
               <img
-                src="/placeholder-image.jpg"
+                src={cake.image}
                 alt={cake.name}
                 className="object-cover w-full h-full"
               />
