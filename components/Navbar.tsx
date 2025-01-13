@@ -2,6 +2,7 @@
 // components/Navbar.tsx
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,19 +13,27 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={45}
-              height={45}
-            />
+            <Link className="text-[#FFD700] hover:text-white" href="/">
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={40}
+                height={40}
+              />
+            </Link>
           </div>
           
           {/* Menu Items */}
           <div className="hidden md:flex space-x-6">
-            <a href="#" className="text-[#FFD700] hover:text-white">Beranda</a>
-            <a href="#" className="text-[#FFD700] hover:text-white">Produk</a>
-            <a href="#" className="text-[#FFD700] hover:text-white">Tentang Kami</a>
+            <Link className="text-[#FFD700] hover:text-white" href="/">
+              Beranda
+            </Link>
+            <Link className="text-[#FFD700] hover:text-white" href="/produk">
+              Produk
+            </Link>
+            <Link className="text-[#FFD700] hover:text-white" href="/tentang-kami">
+              Tentang Kami
+            </Link>
             <a href="#" className="text-[#FFD700] hover:text-white">Kontak</a>
           </div>
           
