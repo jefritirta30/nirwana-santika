@@ -1,5 +1,3 @@
-
-export default Hero;
 import Image from "next/image";
 
 export default function HeroSection() {
