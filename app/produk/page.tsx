@@ -1,6 +1,17 @@
 import Card from "@/components/Card";
 import dummyData from "@/components/data/dummydataproduk.json"
 
+
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  sold: number;  // Tipe data 'sold' adalah number
+  image: string;
+}
+
+
+
 const page = () => {
   return (
     <>

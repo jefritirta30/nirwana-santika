@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Tart Mungil",
+        "name": "Tart Coklat",
         "image": "/images/TartMungil.png"
     },
     {
@@ -25,3 +25,4 @@
          "image": "/images/TartMungil.png"
          }
 ]
+
