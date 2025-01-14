@@ -1,4 +1,9 @@
 import React from "react";
+import FacebookLogo from '@/public/images/facebook-logo.png'
+import InstagramLogo from '@/public/images/Instagram-Logo.png'
+import TwitterLogo from '@/public/images/twitter-logo-removebg-preview.png'
+
+import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-red-800 text-white py-8">
@@ -22,13 +27,13 @@ const Footer = () => {
           <h2 className="font-bold text-lg">Sosial Media</h2>
           <div className="flex justify-center md:justify-start space-x-4 mt-2">
             <a href="#" className="text-white">
-              <i className="fab fa-facebook-f"></i>
+            <Image src={FacebookLogo} alt="" width={40} height={40} />
             </a>
             <a href="#" className="text-white">
-              <i className="fab fa-instagram"></i>
+            <Image src={InstagramLogo} alt="" width={60} height={60} />
             </a>
             <a href="#" className="text-white">
-              <i className="fab fa-twitter"></i>
+            <Image src={TwitterLogo} alt="" width={40} height={40} />
             </a>
           </div>
         </div>
