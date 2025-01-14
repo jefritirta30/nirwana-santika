@@ -34,7 +34,9 @@ const Navbar: React.FC = () => {
             <Link className="text-[#FFD700] hover:text-white" href="/tentang-kami">
               Tentang Kami
             </Link>
-            <a href="#" className="text-[#FFD700] hover:text-white">Kontak</a>
+            <Link className="text-[#FFD700] hover:text-white" href="/kontak">
+              Kontak
+            </Link>
           </div>
           
           {/* Mobile Menu Button */}
