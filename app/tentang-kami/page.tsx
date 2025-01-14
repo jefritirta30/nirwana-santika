@@ -15,14 +15,9 @@ const page = () => {
         <div className="md:w-1/2">
           <h2 className="text-2xl font-bold mb-2">Apa itu Jaya Bakery?</h2>
           <p className="mb-2">
-            CV Jaya Bakery adalah perusahaan yang bergerak pada bidang industri
-            pengolahan pangan khususnya roti dan kue. Perusahaan ini didirikan
-            oleh bapak Siyono yang dahulu merupakan karyawan Roman Bakery.
-            Beliau merintis usaha ini pada bulan Agustus 1997 yang dahulu
-            dikenal dengan nama “Roti Kampas”. Pada awalnya bapak Siyono menjual
-            roti dengan cara door to door atau dari rumah ke rumah. Dengan
-            berjalannya waktu usaha ini terus berkembang hingga pada tahun 2003
-            mendapat merek dagang “Jaya Bakery”.
+          CV Jaya Bakery adalah perusahaan yang bergerak di bidang produksi roti dan kue, dengan kantor pusat berlokasi di Jl. Pulau Damar Gg. Sapta Marga, Blok E 19, Way Dadi, Sukarame, Bandar Lampung.
+          Perusahaan ini didirikan oleh Bapak Siyono pada tahun 1997. Awalnya, usaha ini dikenal dengan nama "Roti Kampas", sebelum akhirnya berkembang dan berganti nama menjadi CV Jaya Bakery.
+          Hingga saat ini, CV Jaya Bakery terus berkomitmen untuk menyediakan produk roti dan kue berkualitas tinggi bagi pelanggan di wilayah Bandar Lampung dan sekitarnya.
           </p>
         </div>
       </div>
