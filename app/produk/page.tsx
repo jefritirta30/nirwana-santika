@@ -1,33 +1,33 @@
+"use client"; // Anotasi untuk Client Component
+
 import Card from "@/components/Card";
-import dummyData from "@/components/data/dummydataproduk.json"
+import dummyData from "@/components/data/dummydataproduk.json";
 
 
 interface Product {
   id: number;
   name: string;
   price: string;
-  sold: number;  // Tipe data 'sold' adalah number
+  sold: number;
   image: string;
 }
-
-
 
 const page = () => {
   return (
     <>
-      <main className="bg-yellow-200 py-8">
+      <main className="bg-yellow-200 py-8 custom-font">
         <div className="container mx-auto text-center mt-10">
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-3xl font-bold text-yellow-900">
             Kumpulan Produk di
-            <span className="text-maroon-800">Jaya Bakery</span>
+            <span className="text-red-500"> Jaya Bakery</span>
           </h1>
-          <p className="mt-2 text-lg">
+          <p className="mt-2 text-lg text-yellow-900">
             Dengan bahan-bahan pilihan dan resep yang sempurna, kue unik ini
             tercipta bak sebuah mahakarya.
           </p>
         </div>
       </main>
-      <section className="container mx-auto py-8">
+      <section className="container mx-auto py-8 custom-font">
         <div className="flex justify-end mb-4">
           <label className="mr-2 text-lg font-semibold">
             Urutkan Berdasarkan:
@@ -45,4 +45,5 @@ const page = () => {
     </>
   );
 };
+
 export default page;
