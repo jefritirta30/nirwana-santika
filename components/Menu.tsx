@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const MenuSection: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  // Data untuk menu roti (50 item dengan nama yang diperbaiki)
+  // Data untuk menu roti (50 item dengan nama dan image yang diperbaiki)
   const cakes = [
     { "name": "Tart Coklat", "price": "Rp90.000", "sold": 4900, "image": "/images/TartMungil.png" },
     { "name": "Slice Cake", "price": "Rp25.000", "sold": 4800 , "image": "/images/Product24.png"},
@@ -57,8 +57,8 @@ const MenuSection: React.FC = () => {
     { name: "Roti Claudia Original", price: "Rp35.000", sold: 100 },
     { name: "Roti Krim Kacang", price: "Rp40.000", sold: 50 },
   ];
+  
   const displayedCakes = isExpanded ? cakes : cakes.slice(0, 8);
-
   const gridCols = isExpanded ? 5 : 4;
 
   return (
@@ -72,9 +72,9 @@ const MenuSection: React.FC = () => {
           gridTemplateColumns: `repeat(${gridCols}, minmax(0, 1fr))`,
         }}
       >
-        {displayedCakes.map((cake, index) => (
+        {displayedCakes.map((cake) => (
           <div
-            key={index}
+            key={cake.name} // Menggunakan name sebagai key
             className="bg-white border rounded-lg shadow-lg p-3 text-center hover:shadow-xl transition-transform duration-300 ease-in-out transform hover:scale-105 flex flex-col items-center"
             style={{
               width: isExpanded ? "180px" : "200px",
