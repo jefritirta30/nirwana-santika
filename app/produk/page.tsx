@@ -22,7 +22,7 @@ const page = () => {
             <span className="text-red-500"> Jaya Bakery</span>
           </h1>
           <p className="mt-2 text-lg text-yellow-900">
-            Dengan bahan-bahan pilihan dan resep yang sempurna, kue unik ini
+            Dengan ini bahan-bahan pilihan dan resep yang sempurna, kue unik ini
             tercipta bak sebuah mahakarya.
           </p>
         </div>
