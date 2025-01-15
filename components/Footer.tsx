@@ -4,6 +4,7 @@ import InstagramLogo from "@/public/images/Instagram-Logo.png";
 import TwitterLogo from "@/public/images/twitter-logo-removebg-preview.png";
 
 import Image from "next/image";
+
 const Footer = () => {
   return (
     <footer id="footer" className="bg-red-800 text-white py-8">
@@ -33,14 +34,29 @@ const Footer = () => {
         <div>
           <h2 className="font-bold text-lg">Sosial Media</h2>
           <div className="flex justify-center md:justify-start space-x-4 mt-2">
-            <a href="#" className="text-white">
-              <Image src={FacebookLogo} alt="" width={40} height={40} />
+            <a
+              href="https://www.facebook.com/share/15XrHTPdPQ/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
+              <Image src={FacebookLogo} alt="Facebook" width={40} height={40} />
             </a>
-            <a href="#" className="text-white">
-              <Image src={InstagramLogo} alt="" width={60} height={60} />
+            <a
+              href="https://www.instagram.com/jayabakeryofficial?igsh=NHhlZDVrZmc1ZWtq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
+              <Image src={InstagramLogo} alt="Instagram" width={60} height={60} />
             </a>
-            <a href="#" className="text-white">
-              <Image src={TwitterLogo} alt="" width={40} height={40} />
+            <a
+              href="https://x.com/jayascravings"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
+              <Image src={TwitterLogo} alt="Twitter" width={40} height={40} />
             </a>
           </div>
         </div>
@@ -53,4 +69,5 @@ const Footer = () => {
     </footer>
   );
 };
+
 export default Footer;
