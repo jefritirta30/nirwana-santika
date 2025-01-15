@@ -19,7 +19,14 @@ const Footer = () => {
         </div>
         <div className="mb-6 md:mb-0">
           <h2 className="font-bold text-lg">Kontak Kami</h2>
-          <p className="text-green-500">Whatsapp</p>
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B6282269937010&text&type=phone_number&app_absent=0&wame_ctl=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-500 hover:underline"
+          >
+            Whatsapp
+          </a>
           <h2 className="font-bold text-lg mt-4">Email</h2>
           <p>jayabakery@gmail.com</p>
         </div>
