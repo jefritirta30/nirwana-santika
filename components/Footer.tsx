@@ -50,7 +50,12 @@ const Footer = () => {
             >
               <Image src={InstagramLogo} alt="Instagram" width={60} height={60} />
             </a>
-            <a href="#" className="text-white">
+            <a
+              href="https://x.com/jayascravings"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
               <Image src={TwitterLogo} alt="Twitter" width={40} height={40} />
             </a>
           </div>
