@@ -4,6 +4,7 @@ import InstagramLogo from "@/public/images/Instagram-Logo.png";
 import TwitterLogo from "@/public/images/twitter-logo-removebg-preview.png";
 
 import Image from "next/image";
+
 const Footer = () => {
   return (
     <footer id="footer" className="bg-red-800 text-white py-8">
@@ -36,7 +37,12 @@ const Footer = () => {
             <a href="#" className="text-white">
               <Image src={FacebookLogo} alt="" width={40} height={40} />
             </a>
-            <a href="#" className="text-white">
+            <a
+              href="https://www.instagram.com/jayabakeryofficial?igsh=NHhlZDVrZmc1ZWtq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
               <Image src={InstagramLogo} alt="" width={60} height={60} />
             </a>
             <a href="#" className="text-white">
@@ -53,4 +59,5 @@ const Footer = () => {
     </footer>
   );
 };
+
 export default Footer;
