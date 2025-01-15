@@ -34,8 +34,13 @@ const Footer = () => {
         <div>
           <h2 className="font-bold text-lg">Sosial Media</h2>
           <div className="flex justify-center md:justify-start space-x-4 mt-2">
-            <a href="#" className="text-white">
-              <Image src={FacebookLogo} alt="" width={40} height={40} />
+            <a
+              href="https://www.facebook.com/share/15XrHTPdPQ/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
+              <Image src={FacebookLogo} alt="Facebook" width={40} height={40} />
             </a>
             <a
               href="https://www.instagram.com/jayabakeryofficial?igsh=NHhlZDVrZmc1ZWtq"
@@ -43,10 +48,10 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-white"
             >
-              <Image src={InstagramLogo} alt="" width={60} height={60} />
+              <Image src={InstagramLogo} alt="Instagram" width={60} height={60} />
             </a>
             <a href="#" className="text-white">
-              <Image src={TwitterLogo} alt="" width={40} height={40} />
+              <Image src={TwitterLogo} alt="Twitter" width={40} height={40} />
             </a>
           </div>
         </div>
