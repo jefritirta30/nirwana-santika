@@ -5,7 +5,6 @@ const AboutPage = () => {
   return (
     <div className="container mx-auto p-6">
       <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
-        Tentang Jaya Bakery
       </h1>
       <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-6 md:p-8 mb-12 border border-gray-300" style={{ background: "linear-gradient(to bottom, #ffffff, #f8f9fa)", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}>
         <Image
