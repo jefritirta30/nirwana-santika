@@ -1,16 +1,6 @@
 "use client"; // Anotasi untuk Client Component
-
 import Card from "@/components/Card";
 import dummyData from "@/components/data/dummydataproduk.json";
-
-
-interface Product {
-  id: number;
-  name: string;
-  price: string;
-  sold: number;
-  image: string;
-}
 
 const page = () => {
   return (
@@ -38,7 +28,7 @@ const page = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {dummyData.map((item) => (
-            <Card key={item.id} data={item} />
+            <Card key={item.name} data={item} />
           ))}
         </div>
       </section>

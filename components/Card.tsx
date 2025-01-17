@@ -6,7 +6,7 @@ interface CardProps {
     name: string;
     image: string;
     price: string;
-    sold: string;
+    sold: number;
   };
 }
 

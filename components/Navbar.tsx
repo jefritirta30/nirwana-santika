@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import DarkMode from "./DarkMode";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +40,7 @@ const Navbar: React.FC = () => {
             >
               Kontak
             </a>
+            <DarkMode />
           </div>
           <div className="md:hidden">
             <button
@@ -85,6 +87,7 @@ const Navbar: React.FC = () => {
             >
               Kontak
             </a>
+            <DarkMode />
           </div>
         </div>
       )}
