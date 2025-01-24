@@ -62,46 +62,48 @@ const MenuSection: React.FC = () => {
   const gridCols = isExpanded ? 5 : 4;
 
   return (
-    <section className="text-center mt-6 px-6 max-w-screen-lg mx-auto mb-16">
-      <h2 className="text-4xl font-bold text-black mb-6">
-        Nikmati kue terlaris di bulan ini dari Jaya Bakery
-      </h2>
+<section className="text-center mt-6 px-6 max-w-screen-lg mx-auto mb-16">
+  <h2 className="text-4xl font-bold mb-6">
+    <span className="text-yellow-900">Nikmati kue terlaris di bulan ini dari </span>
+    <span className="text-red-500">Jaya Bakery</span>
+  </h2>
+  <div
+    className="grid gap-4 place-items-center transition-all duration-500 ease-in-out"
+    style={{
+      gridTemplateColumns: `repeat(${gridCols}, minmax(0, 1fr))`,
+    }}
+  >
+    {displayedCakes.map((cake) => (
       <div
-        className="grid gap-4 place-items-center transition-all duration-500 ease-in-out"
+        key={cake.name}
+        className="bg-white border rounded-lg shadow-lg p-3 text-center hover:shadow-xl transition-transform duration-300 ease-in-out transform hover:scale-105 flex flex-col items-center"
         style={{
-          gridTemplateColumns: `repeat(${gridCols}, minmax(0, 1fr))`,
+          width: isExpanded ? "180px" : "200px",
+          height: isExpanded ? "250px" : "230px",
         }}
       >
-        {displayedCakes.map((cake) => (
-          <div
-            key={cake.name} // Menggunakan name sebagai key
-            className="bg-white border rounded-lg shadow-lg p-3 text-center hover:shadow-xl transition-transform duration-300 ease-in-out transform hover:scale-105 flex flex-col items-center"
-            style={{
-              width: isExpanded ? "180px" : "200px",
-              height: isExpanded ? "250px" : "230px",
-            }}
-          >
-            <div className="bg-gray-200 w-full h-32 rounded-lg mb-3 overflow-hidden">
-              <img
-                src={cake.image}
-                alt={cake.name}
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <h3 className="text-lg font-semibold text-gray-800">{cake.name}</h3>
-            <p className="text-red-500 font-bold mt-2">{cake.price}</p>
-            <p className="text-gray-600 text-sm">Terjual: {cake.sold}</p>
-          </div>
-        ))}
+        <div className="bg-gray-200 w-full h-32 rounded-lg mb-3 overflow-hidden">
+          <img
+            src={cake.image}
+            alt={cake.name}
+            className="object-cover w-full h-full"
+          />
+        </div>
+        <h3 className="text-lg font-semibold text-gray-800">{cake.name}</h3>
+        <p className="text-red-500 font-bold mt-2">{cake.price}</p>
+        <p className="text-gray-600 text-sm">Terjual: {cake.sold}</p>
       </div>
+    ))}
+  </div>
 
-      <button
-        className="mt-6 bg-[#FFC107] hover:bg-[#d69c06] text-black font-semibold py-2 px-6 rounded-lg shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105"
-        onClick={() => setIsExpanded(!isExpanded)}
-      >
-        {isExpanded ? "Tutup" : "Lihat semua kue"}
-      </button>
-    </section>
+  <button
+    className="mt-6 bg-[#FFC107] hover:bg-[#d69c06] text-black font-semibold py-2 px-6 rounded-lg shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105"
+    onClick={() => setIsExpanded(!isExpanded)}
+  >
+    {isExpanded ? "Tutup" : "Lihat semua kue"}
+  </button>
+</section>
+
   );
 };
 
