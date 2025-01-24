@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #fef08a; /* Mengubah warna latar belakang menjadi #fef08a */
   --foreground: #171717;
 }
 
